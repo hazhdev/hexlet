@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(fonts/Raleway-ExtraBold.woff2);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-width: 800px;
+    position: relative;
+}
+
+.title {
+    font-family: 'Raleway';
+    font-size: 116px;
+    color: black;
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.title:hover::before {
+    content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
+    position: absolute;
+    top: 140px;
+    left: 370px;
+    white-space: pre;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-size: 34px;
+    z-index: 15;
+    border: 1px solid #000;
+    width: 742px;
+    height: 142px;
+}
+
+.title span {
+    display: block;
+}
+
+.title span:nth-child(3)::after {
+    content: ' *';
+    color: black;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
