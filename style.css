@@ -26,6 +26,7 @@ body {
     color: black;
     z-index: 10;
     position: relative;
+    left: 400px;
     display: inline-block;
     text-align: center;
 }
