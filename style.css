@@ -29,8 +29,8 @@ body:hover {
     font-family: 'Raleway';
     font-size: 116px;
     color: black;
-    z-index: 19;
-    position: static;
+    z-index: 10;
+    position: relative;
     left: 400px;
     display: inline-block;
     text-align: center;
