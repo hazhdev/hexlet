@@ -20,12 +20,17 @@ body {
     position: relative;
 }
 
+body:hover {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
 .title {
     font-family: 'Raleway';
     font-size: 116px;
     color: black;
-    z-index: 10;
-    position: relative;
+    z-index: 19;
+    position: static;
     left: 400px;
     display: inline-block;
     text-align: center;
@@ -57,6 +62,8 @@ body::before {
     border: 1px solid #000;
     width: 742px;
     height: 142px;
+    box-shadow: 0px 6px black;
+    border-radius: 20px;
 }
 
 .title span {
