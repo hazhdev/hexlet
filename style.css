@@ -13,19 +13,23 @@
 
 html, body {
     height: 100%;
+    min-width: 800px;
 }
 
 body {
     min-width: 800px;
     position: relative;
+    height: 100vh;
 }
+
 
 .title {
     font-family: 'Raleway';
     font-size: 116px;
     text-align: center;
     width: 730px;
-    
+    margin: 0 auto;
+    position: relative;
 }
 
 .title::after {
@@ -33,26 +37,11 @@ body {
     color: black;
 }
 
-.body title:hover {
-    background-color: #fff;
-    opacity: 0.8;
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-}
-
 .title:hover::before {
     content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
     position: absolute;
-    top: 140px;
-    left: 370px;
+    top: 40%;
+    left: 50%;
     white-space: pre;
     background: white;
     color: black;
@@ -66,6 +55,15 @@ body::before {
     height: 142px;
     box-shadow: 0px 6px black;
     border-radius: 20px;
+}
+
+.title:hover {
+    color: #4C4C4C;;
+}
+
+.title:hover + .video{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
 }
 
 .video {
