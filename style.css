@@ -41,7 +41,7 @@ body {
 }
 
 .title::after {
-    content: ' *';
+    content: '*';
 }
 
 .title:hover::before {
